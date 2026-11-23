@@ -1,7 +1,12 @@
-Aim
-To write a Python program using Pandas to create a DataFrame and perform 
+Aim:
 
-operations like head, tail, info, describe and sorting.
+To write a Python program using Pandas 
+
+to create a DataFrame and perform 
+
+operations like head, tail, info, 
+
+describe and sorting.
 
 Algorithm
 
