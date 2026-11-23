@@ -1,0 +1,32 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+data={
+     "Name":["Arun","Rajesh","Divya","Esha","Farhan","Hari","Charan"],
+     "Marks":[30,45,67,89,78,90,56],
+     "Attendance":[45,68,90,100,89,30,50]
+    }
+df=pd.DataFrame(data)
+print(df)
+plt.figure()
+plt.bar(df["Name"],df["Marks"])
+plt.xlabel("Name")
+plt.ylabel("Marks")
+plt.show()
+plt.figure()
+plt.plot(df["Name"],df["Marks"])
+plt.xlabel("Name")
+plt.ylabel("Marks")
+plt.show()
+plt.figure()
+plt.pie(df["Marks"],labels=df["Name"],autopct="%1.1f%%")
+plt.show()
+plt.figure()
+plt.scatter(df["Attendance"],df["Marks"])
+plt.xlabel("Attendance")
+plt.ylabel("Marks")
+plt.show()
+plt.figure()
+plt.hist(df["Marks"],bins=5)
+plt.xlabel("Marks")
+plt.ylabel("Students")
+plt.show()
